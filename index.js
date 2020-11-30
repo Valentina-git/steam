@@ -13,3 +13,21 @@ console.log(data);
 
 navigation(data.navigationsLink)
 createCards(data.games.actions)
+
+const createMarkup = (event) => {
+    const name = event.target.dataset.link;
+    createCards(data.games[name]);
+}
+
+const findGame = (event) => {
+    console.log(event.target);
+    const game = data.games[event.target.dataset.category]
+    .find(game => game.id == event.target.dataset.id)
+    console.log(game);
+}
+
+
+ref.navList.addEventListener("click", createMarkup)
+
+ref.mainCard.addEventListener("click", findGame)
+

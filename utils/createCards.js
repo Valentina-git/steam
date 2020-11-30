@@ -9,6 +9,9 @@ export const createCards = (cards) => {
         <img src= ${card.img} alt=${card.title}/>
         <p>${card.description}</p>
         <p>${card.price}</p>
+        <button data-id=${card.id} 
+        data-category = ${card.category}
+        type="button">Add to Cart</button>
         </li>
         `
         return acc;

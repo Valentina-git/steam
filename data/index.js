@@ -119,7 +119,10 @@ const data = {
         actions, rpg
     },
     navigationsLink: [
-        "Actions", "RPG", "Cart", "NewProduct"
+        { name: "Actions", value: "actions" },
+        { name: "RPG", value: "rpg" },
+        { name: "Cart", value: "cart" },
+        { name: "NewProduct", value: "newProduct" },
     ],
     cart: [],
 }

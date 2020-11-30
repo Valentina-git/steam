@@ -1,4 +1,4 @@
 export const ref = {
-    naviList: document.querySelector('.list'),
+    navList: document.querySelector('.list'),
     mainCard: document.querySelector('.cardList')
 }
